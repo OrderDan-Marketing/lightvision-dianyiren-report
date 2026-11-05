@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>光亮眼鏡 × 典義人 聯合提案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F3EC;--ink:#22262B;--muted:#6B7280;--line:#DED6C8;--red:#C23B22;--a:#1F3350;--a-soft:#E8EDF4;--b:#9A6B1F;--b-soft:#F5ECDA;--hf:'Cactus Classical Serif',serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:#F7F3EC;color:var(--ink);font-family:'Noto Sans TC',sans-serif;font-size:17px;line-height:1.75;overflow-x:hidden;overflow-anchor:none}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+h1,h2{font-family:var(--hf);font-weight:400;line-height:1.3}
+h1{font-size:clamp(30px,5vw,56px)}
+h2{font-size:clamp(24px,3.2vw,36px);margin-top:6px}
+main[hidden]{display:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+.red{color:var(--red);font-weight:700}
+.tabs{position:sticky;top:0;z-index:50;display:flex;gap:8px;padding:6px 16px;background:rgba(247,243,236,.96);border-bottom:1px solid var(--line);overflow-x:auto;max-width:100%}
+.tabs .tab{appearance:none;border:0;background:none;font:inherit;font-size:18px;font-weight:700;color:var(--muted);padding:10px 18px;min-height:48px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tabs .tab[data-tab="dianyiren"].on{color:var(--a);border-bottom-color:var(--a)}
+.tabs .tab[data-tab="lightvision"].on{color:var(--b);border-bottom-color:var(--b)}
+.tabs .tab:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.cover{padding:64px 0 28px}
+.eyebrow{font-size:14px;letter-spacing:.18em;color:var(--red);font-weight:700;margin-bottom:14px}
+.chan{margin-top:8px;font-weight:700;font-size:19px}
+.bar{height:5px;margin:18px 0;max-width:360px}
+.lead{font-size:19px;max-width:820px}
+.by{margin-top:18px;color:var(--muted);font-size:15px}
+.ta .chan{color:var(--a)}.ta .bar{background:var(--a)}
+.tb .chan{color:var(--b)}.tb .bar{background:var(--b)}
+.routes{padding-top:8px;padding-bottom:36px}
+.routes .rt{font-size:14px;letter-spacing:.14em;font-weight:700;margin-bottom:10px}
+.routes .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.routes a{display:block;padding:12px 14px;text-decoration:none;border:1px solid;border-radius:8px;font-size:15px;line-height:1.5;min-width:0}
+.routes a b{display:block;font-size:16px}
+.routes .ra{border-color:var(--a);color:var(--a)}
+.routes .rb{border-color:var(--b);color:var(--b)}
+.routes .ra.cur{background:var(--a);color:#fff}
+.routes .rb.cur{background:var(--b);color:#fff}
+.sec{padding:44px 0;border-top:1px solid var(--line)}
+.lab{display:inline-block;font-size:14px;letter-spacing:.14em;font-weight:700;color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:2px}
+.sec.a .lab{color:var(--a);border-color:var(--a)}
+.sec.b .lab{color:var(--b);border-color:var(--b)}
+ul,ol{padding-left:1.3em}
+li{margin:6px 0}
+ul.list{margin-top:14px}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+table{width:100%;border-collapse:collapse;margin-top:20px;font-size:16px}
+th,td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+th{background:#ECE6DA;font-weight:700}
+.a table th{background:var(--a-soft);color:var(--a)}
+.b table th{background:var(--b-soft);color:var(--b)}
+.tbd{color:var(--red);border:1px dashed var(--red);padding:0 8px;border-radius:3px}
+.ev{display:grid;grid-template-columns:5fr 7fr;gap:8px 32px;grid-template-areas:"head head" "list fig";margin-top:6px}
+.ev .head{grid-area:head}
+.ev .list{grid-area:list}
+.ev figure{grid-area:fig;align-self:start}
+.ev img{display:block;width:100%;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);box-shadow:0 4px 14px rgba(34,38,43,.12)}
+.ev .list ul{margin-top:14px}
+.steps{list-style:decimal;margin-top:18px}
+.steps li{margin:12px 0;padding-left:4px}
+.timeline{list-style:none;padding:0;margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:7px;border-top:1px solid var(--ink)}
+.timeline li{position:relative;margin:0;padding:26px 16px 0 0}
+.timeline li::before{content:"";position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;background:var(--ink)}
+.timeline b{display:block;font-family:var(--hf);font-size:22px;font-weight:400;margin-bottom:4px}
+.ta .timeline::before{border-top-color:var(--a)}.ta .timeline li::before{background:var(--a)}
+.tb .timeline::before{border-top-color:var(--b)}.tb .timeline li::before{background:var(--b)}
+footer{border-top:3px solid var(--ink);padding:40px 0 56px;margin-top:24px}
+footer p{margin:4px 0}
+footer .l2{color:var(--muted);font-size:15px}
+@media (max-width:860px){
+.ev{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "fig" "list"}
+.ev figure{margin:12px 0}
+}
+@media (max-width:767px){
+.tabs .tab{font-size:16px;padding:10px 14px}
+}
+@media (max-width:700px){
+body{font-size:16.5px}
+.cover{padding:40px 0 24px}
+.sec{padding:36px 0}
+.routes a{font-size:13px;padding:10px}
+.routes a b{font-size:14px}
+table,thead,tbody,tr,th,td{display:block;width:100%}
+thead{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+tr{border-top:2px solid var(--ink);padding:8px 0;margin-bottom:6px}
+td{border:0;padding:4px 0}
+td::before{content:attr(data-label) "：";font-weight:700;color:var(--muted)}
+.timeline{grid-template-columns:1fr}
+.timeline::before{right:auto;left:7px;top:0;bottom:0;border-top:0;border-left:1px solid var(--ink)}
+.ta .timeline::before{border-left-color:var(--a)}.tb .timeline::before{border-left-color:var(--b)}
+.timeline li{padding:0 0 20px 32px}
+.timeline li::before{top:4px}
+}
+</style>
+</head>
+<body>
+<nav class="tabs" role="tablist" aria-label="分頁">
+<button class="tab on" role="tab" data-tab="lightvision" aria-selected="true">光亮眼鏡精品</button>
+<button class="tab" role="tab" data-tab="dianyiren" aria-selected="false">典義人藝術塗裝工程</button>
+</nav>
+
+<main id="tab-lightvision" role="tabpanel" class="tb">
+<header class="cover"><div class="wrap">
+<p class="eyebrow">聯合提案企劃｜2026 年 11 月</p>
+<h1>光亮眼鏡精品</h1>
+<p class="chan">FB、IG、Threads 廣告提案</p>
+<div class="bar"></div>
+<p class="lead">眼鏡是配件，戴在人臉上才看得出樣子。這份提案用品牌帳號加人物帳號兩條線，帶來粉絲、門市客人與官網訪客。</p>
+<p class="by">提案方 Orderdan 簡單營銷｜orderdan-ai-marketing.com｜提案日期 2026-11-05</p>
+</div></header>
+
+<div class="wrap routes">
+<p class="rt">聯合提案的兩條通路</p>
+<div class="grid">
+<a class="rb cur" href="#lightvision"><b>光亮眼鏡精品</b>FB、IG、Threads 廣告</a>
+<a class="ra" href="#dianyiren"><b>典義人藝術塗裝工程</b>社群貼文廣告 ＋ Google 搜尋廣告</a>
+</div>
+</div>
+
+<section class="sec b" id="b-summary"><div class="wrap">
+<span class="lab">01 提案摘要</span>
+<h2>三個目標：增加粉絲、到門市、到官網逛逛</h2>
+<table>
+<thead><tr><th>項目</th><th>內容</th></tr></thead>
+<tbody>
+<tr><td data-label="項目">目標</td><td data-label="內容">增加粉絲、到門市、到官網逛逛</td></tr>
+<tr><td data-label="項目">客人的路徑</td><td data-label="內容">看到貼文後留言、發 FB／IG 訊息詢問、加 LINE，再預約到店</td></tr>
+<tr><td data-label="項目">通路</td><td data-label="內容">FB、IG、Threads 廣告</td></tr>
+<tr><td data-label="項目">帳號</td><td data-label="內容">品牌帳號，加上人物 IP 帳號協作</td></tr>
+<tr><td data-label="項目">成效怎麼算</td><td data-label="內容">新增粉絲數、留言與訊息數、LINE 加入數、官網訪客數、到店數</td></tr>
+</tbody>
+</table>
+<p class="note">資料來源：光亮眼鏡 Instagram 公開頁面，2026-11-05 讀取。</p>
+</div></section>
+
+<section class="sec b" id="b-status"><div class="wrap">
+<div class="ev">
+<div class="head"><span class="lab">02 現況</span>
+<h2>與個人帳號共同發布的開幕貼文<span class="red">468 讚</span>，品牌帳號近期貼文 2 讚與 7 讚</h2></div>
+<figure><img src="ig-profile.jpg" alt="光亮眼鏡精品 Instagram 主頁 @light_vision_kh" loading="lazy" width="960" height="888"></figure>
+<div class="list"><ul>
+<li>Instagram @light_vision_kh：1,232 位粉絲，已驗證帳號。</li>
+<li>全台首間 DIOR 品牌形象眼鏡概念店，設有 DIOR 原廠授權展示櫃體。</li>
+<li>超過 60 個原廠授權國際精品與工藝眼鏡品牌。</li>
+<li>蔡司優視力專家，貼文寫斥資逾 4,000 萬元配置 ZEISS 全套前導波設備；LEICA 認證授權據點。</li>
+<li>從屏東出發、深耕南台灣十年；高雄形象概念店在美術館特區（鼓山區美術東二路 620 號），預約優先制。</li>
+</ul></div>
+</div>
+<table>
+<thead><tr><th>日期</th><th>貼文主題</th><th>發布帳號</th><th>按讚</th></tr></thead>
+<tbody>
+<tr><td data-label="日期">2026-07-24</td><td data-label="貼文主題">高雄形象概念店介紹</td><td data-label="發布帳號">品牌帳號</td><td data-label="按讚">108</td></tr>
+<tr><td data-label="日期">2026-08-08</td><td data-label="貼文主題">高雄形象概念店開幕</td><td data-label="發布帳號">與 @______fuboss 等個人帳號共同發布</td><td data-label="按讚"><span class="red">468</span></td></tr>
+<tr><td data-label="日期">2026-10-05</td><td data-label="貼文主題">Cartier Precious 珍貴頂級系列</td><td data-label="發布帳號">品牌帳號</td><td data-label="按讚">2</td></tr>
+<tr><td data-label="日期">2026-10-24</td><td data-label="貼文主題">DIOR 眼鏡櫥窗 2026 秋冬</td><td data-label="發布帳號">品牌帳號</td><td data-label="按讚">7</td></tr>
+</tbody>
+</table>
+<p class="note">Instagram 公開頁面顯示數字，2026-11-05 讀取。開幕貼文另有 11 則留言。</p>
+</div></section>
+
+<section class="sec b" id="b-insight"><div class="wrap">
+<span class="lab">03 判讀</span>
+<h2>有人物的貼文，互動是品牌貼文的四倍以上</h2>
+<ol class="steps">
+<li><b>人物帳號帶來的互動比品牌帳號多。</b>與個人帳號共同發布的開幕貼文 468 讚；品牌帳號的概念店介紹貼文 108 讚，近期兩則 2 讚與 7 讚。</li>
+<li><b>眼鏡是配件，戴在人臉上才看得出樣子。</b>近期貼文的主角是鏡款與櫥窗。有人物配戴，觀眾能想像自己戴起來的樣子。</li>
+<li><b>留言、訊息、LINE 是到店前的一步。</b>門市採預約優先制，客人問了再來。這三個動作都數得到，也都對得回廣告。</li>
+</ol>
+</div></section>
+
+<section class="sec b" id="b-persona"><div class="wrap">
+<span class="lab">04 人物 IP</span>
+<h2>品牌帳號之外，加一個人物 IP 帳號協作導流</h2>
+<ul class="list">
+<li>分工：品牌帳號發空間、選品、品牌故事；人物帳號發配戴、穿搭、挑鏡日常。</li>
+<li>協作：兩個帳號用 IG 協作貼文共同發布同一則內容，粉絲互相導流。開幕貼文就是這個做法。</li>
+<li>廣告：人物帳號的貼文一併投放，兩個帳號分開看成效。</li>
+<li>人選：店主、門市同仁，或合作的在地人物。請業主確認是否有人選與現成的個人帳號。</li>
+</ul>
+</div></section>
+
+<section class="sec b" id="b-structure"><div class="wrap">
+<span class="lab">05 廣告架構</span>
+<h2>三組廣告，對應三個目標</h2>
+<table>
+<thead><tr><th>目標</th><th>給誰看</th><th>素材</th><th>客人的動作</th></tr></thead>
+<tbody>
+<tr><td data-label="目標">增加粉絲</td><td data-label="給誰看">高雄與屏東、對精品與穿搭有興趣的人</td><td data-label="素材">人物配戴短影音、協作貼文</td><td data-label="客人的動作">追蹤品牌帳號與人物帳號</td></tr>
+<tr><td data-label="目標">到門市</td><td data-label="給誰看">看過影片、互動過的人，門市周邊的人</td><td data-label="素材">空間影片、DIOR 店中店、預約邀請</td><td data-label="客人的動作">留言、發 FB／IG 訊息、加 LINE</td></tr>
+<tr><td data-label="目標">到官網逛逛</td><td data-label="給誰看">互動過的人、追蹤者</td><td data-label="素材">品牌選品輪播（DIOR、Cartier 等）</td><td data-label="客人的動作">點進官網看鏡款</td></tr>
+</tbody>
+</table>
+<ul class="list">
+<li>版位：Facebook、Instagram（動態、限時動態、Reels）、Threads。三個平台用同一組素材，在版位設定一起開。</li>
+<li>Threads 版位支援的素材格式，以廣告管理員後台顯示為準，上線前確認。</li>
+<li>投放半徑與受眾條件：開戶後與業主確認。</li>
+</ul>
+</div></section>
+
+<section class="sec b" id="b-creative"><div class="wrap">
+<span class="lab">06 素材</span>
+<h2>現有照片可以上廣告，補拍的主角是人</h2>
+<ul class="list">
+<li>現有：店面外觀、DIOR 櫥窗、Cartier 鏡款、十週年主視覺，照片可以做成廣告。</li>
+<li>建議補拍：人物配戴鏡框的直式短片、試戴前後對照、挑鏡過程。</li>
+<li>文案原則：寫鏡框的材質、工藝、品牌故事；驗光與視力的內容只描述設備與流程。</li>
+</ul>
+</div></section>
+
+<section class="sec b" id="b-tracking"><div class="wrap">
+<span class="lab">07 追蹤與報表</span>
+<h2>留言、訊息、LINE、官網、到店，五個數字對起來</h2>
+<ul class="list">
+<li>留言數與訊息數：由廣告後台與收件匣統計。</li>
+<li>LINE：記錄每支廣告帶來的加入連結點擊。</li>
+<li>官網 www.light-vision.com.tw 安裝 Meta Pixel 與轉換 API，記錄官網訪客。</li>
+<li>到店：預約名單回填「已到店」「已成交」。</li>
+<li>上線前與業主確認：DIOR、Cartier 等品牌對授權店廣告使用品牌名稱與原廠圖片的規範。</li>
+<li>追蹤碼用 Google Tag Manager 管理。</li>
+<li>報表：每週一份數字摘要，每月一份檢討。</li>
+</ul>
+</div></section>
+
+<section class="sec b" id="b-timeline"><div class="wrap">
+<span class="lab">08 時程</span>
+<h2>30 天：第一週建置，第二週上線，月底檢討</h2>
+<ol class="timeline">
+<li><b>第 1 週</b>廣告帳戶與權限開通、Meta Pixel 與轉換 API 安裝、人物 IP 人選確認、素材盤點</li>
+<li><b>第 2 週</b>三組廣告上線</li>
+<li><b>第 3–4 週</b>拍攝人物短片，依數據調整素材與受眾</li>
+<li><b>第 30 天</b>成效報告與下一階段建議</li>
+</ol>
+</div></section>
+
+<section class="sec b" id="b-kpi"><div class="wrap">
+<span class="lab">09 成效指標</span>
+<h2>上線兩週取得基準，再訂目標數字</h2>
+<ul class="list">
+<li>新增粉絲數</li>
+<li>留言數與訊息數</li>
+<li>LINE 加入數</li>
+<li>官網訪客數</li>
+<li>到店回填數</li>
+</ul>
+<p class="note">目標數字在上線兩週、取得實際成本後訂定。</p>
+</div></section>
+
+<section class="sec b" id="b-fee"><div class="wrap">
+<span class="lab">10 費用</span>
+<h2>費用</h2>
+<table>
+<thead><tr><th>項目</th><th>計費方式</th></tr></thead>
+<tbody>
+<tr><td data-label="項目">每月廣告預算（付給平台）</td><td data-label="計費方式">沒有金額限制</td></tr>
+<tr><td data-label="項目">廣告代操服務費</td><td data-label="計費方式">廣告費的 20%</td></tr>
+<tr><td data-label="項目">追蹤建置（網站埋代碼）</td><td data-label="計費方式">一次性，按工時計費</td></tr>
+</tbody>
+</table>
+<ul class="list">
+<li>直接使用業主自己的廣告帳戶投放，廣告費由該帳戶付給平台。</li>
+<li>廣告預算金額高時，協助財務報帳。</li>
+<li>Meta 廣告：企業另外替 Meta 支付 3%，該期廣告費可以列入公司費用扣抵。</li>
+</ul>
+</div></section>
+
+<section class="sec b" id="b-prep"><div class="wrap">
+<span class="lab">11 開始前的準備</span>
+<h2>開始前，請業主準備的資料</h2>
+<ul class="list">
+<li>人物 IP 人選與其 IG 帳號</li>
+<li>Meta 企業管理平台的廣告帳戶與粉專、IG 權限</li>
+<li>LINE 官方帳號</li>
+<li>官網後台或工程窗口（安裝追蹤碼）</li>
+<li>各精品品牌的廣告素材使用規範</li>
+<li>可拍攝短片的時段</li>
+</ul>
+</div></section>
+</main>
+
+<main id="tab-dianyiren" role="tabpanel" class="ta" hidden>
+<header class="cover"><div class="wrap">
+<p class="eyebrow">聯合提案企劃｜2026 年 11 月</p>
+<h1>典義人藝術塗裝工程</h1>
+<p class="chan">社群貼文廣告 ＋ Google 搜尋廣告提案</p>
+<div class="bar"></div>
+<p class="lead">兩種客人，兩條路線。設計公司與統包業者在社群上看案例、留言、發訊息；屋主在 Google 上搜尋、來電諮詢。</p>
+<p class="by">提案方 Orderdan 簡單營銷｜orderdan-ai-marketing.com｜提案日期 2026-11-05</p>
+</div></header>
+
+<div class="wrap routes">
+<p class="rt">聯合提案的兩條通路</p>
+<div class="grid">
+<a class="rb" href="#lightvision"><b>光亮眼鏡精品</b>FB、IG、Threads 廣告</a>
+<a class="ra cur" href="#dianyiren"><b>典義人藝術塗裝工程</b>社群貼文廣告 ＋ Google 搜尋廣告</a>
+</div>
+</div>
+
+<section class="sec a" id="a-summary"><div class="wrap">
+<span class="lab">01 提案摘要</span>
+<h2>兩條路線：社群貼文找合作對象，Google 搜尋接屋主來電</h2>
+<table>
+<thead><tr><th>項目</th><th>路線一　社群貼文廣告</th><th>路線二　Google 搜尋廣告</th></tr></thead>
+<tbody>
+<tr><td data-label="項目">找誰</td><td data-label="路線一　社群貼文廣告">設計公司、統包業者等合作對象</td><td data-label="路線二　Google 搜尋廣告">有外牆、防水需求的屋主（散客）</td></tr>
+<tr><td data-label="項目">怎麼找</td><td data-label="路線一　社群貼文廣告">施工案例貼文投廣告，邀請留言，再轉訊息</td><td data-label="路線二　Google 搜尋廣告">一頁式網站，投 Google 關鍵字</td></tr>
+<tr><td data-label="項目">廣告的終點</td><td data-label="路線一　社群貼文廣告">留言、發訊息</td><td data-label="路線二　Google 搜尋廣告">來電諮詢</td></tr>
+<tr><td data-label="項目">成效怎麼算</td><td data-label="路線一　社群貼文廣告">留言數、訊息數、每則訊息成本</td><td data-label="路線二　Google 搜尋廣告">來電數、每通來電成本</td></tr>
+</tbody>
+</table>
+<p class="note">資料來源：典義人 Facebook 粉絲專頁，2026-11-05 讀取。</p>
+</div></section>
+
+<section class="sec a" id="a-status"><div class="wrap">
+<div class="ev">
+<div class="head"><span class="lab">02 現況</span>
+<h2>一則貼文<span class="red">584 則留言</span>，留言問的是價格</h2></div>
+<figure><img src="fb-post.jpg" alt="典義人藝術塗裝工程 Facebook 粉絲專頁簡介與 2026-10-16 貼文" loading="lazy" width="900" height="830"></figure>
+<div class="list"><ul>
+<li>粉絲專頁 1,309 位追蹤者，服務區域列台中市、高雄市、嘉義市、台南市。</li>
+<li>簡介主打：防水補強工程、外牆拉皮、五年保固、仿清水模塗裝、仿石漆塗裝、責任施工。</li>
+<li>留言原文：「這樣費用大概多少？」「想了解4樓透天這樣做的價格」「請問這建築物花費多少？」</li>
+<li>粉專的回覆：「私訊你嘍」「可提供需施作面坪數或尺寸估價給您」。</li>
+</ul></div>
+</div>
+<table>
+<thead><tr><th>日期</th><th>貼文主題</th><th>心情</th><th>留言</th><th>分享</th></tr></thead>
+<tbody>
+<tr><td data-label="日期">2026-10-16</td><td data-label="貼文主題">老屋外牆翻新，舊磁磚不打除</td><td data-label="心情">75</td><td data-label="留言">14</td><td data-label="分享">8</td></tr>
+<tr><td data-label="日期">2026-10-08</td><td data-label="貼文主題">新建住宅外牆塗料</td><td data-label="心情">38</td><td data-label="留言">未顯示</td><td data-label="分享">未顯示</td></tr>
+<tr><td data-label="日期">2025-07-29</td><td data-label="貼文主題">台南外牆拉皮，舊磁磚不需打除</td><td data-label="心情">143</td><td data-label="留言">162</td><td data-label="分享">16</td></tr>
+<tr><td data-label="日期">2025-06-19</td><td data-label="貼文主題">仿石漆</td><td data-label="心情">53</td><td data-label="留言">70</td><td data-label="分享">8</td></tr>
+<tr><td data-label="日期">2024-05-31</td><td data-label="貼文主題">四樓半透天外牆防水拉皮</td><td data-label="心情">337</td><td data-label="留言"><span class="red">584</span></td><td data-label="分享">36</td></tr>
+</tbody>
+</table>
+<p class="note">未登入狀態可見的 5 則貼文，2026-11-05 讀取。</p>
+</div></section>
+
+<section class="sec a" id="a-insight"><div class="wrap">
+<span class="lab">03 判讀</span>
+<h2>留言轉訊息這條路粉專走得通，再加一條接屋主來電的路</h2>
+<ol class="steps">
+<li><b>留言轉訊息，粉專現在就這樣做。</b>一則貼文 584 則留言，粉專回覆「私訊你嘍」。貼文廣告把這個流程放大。</li>
+<li><b>設計公司與統包業者看的是案例。</b>施工前後對比貼文出現在他們的動態裡，留言、發訊息就能談配合。</li>
+<li><b>屋主遇到狀況會上 Google。</b>外牆漏水、磁磚剝落的屋主，會搜尋「外牆拉皮」「外牆防水」找廠商，看到就打電話。</li>
+</ol>
+</div></section>
+
+<section class="sec a" id="a-social"><div class="wrap">
+<span class="lab">04 路線一</span>
+<h2>路線一：案例貼文投廣告，留言轉訊息</h2>
+<ul class="list">
+<li>對象：設計公司、統包業者等合作對象。</li>
+<li>素材：施工前後對比貼文，粉專現有案例可以用（老屋外牆翻新、仿石漆、四樓半透天外牆拉皮）。</li>
+<li>流程：貼文廣告、留言、粉專回覆、發訊息報價。</li>
+<li>地區：高雄、台南、嘉義、台中，與粉專列的服務區域一致。</li>
+<li>受眾條件：開戶後依廣告管理員可選的項目設定。</li>
+<li>回覆：留言與訊息的回覆內容整理成固定範本，由業主或專人回覆。</li>
+</ul>
+</div></section>
+
+<section class="sec a" id="a-search"><div class="wrap">
+<span class="lab">05 路線二</span>
+<h2>路線二：一頁式網站加 Google 關鍵字，接屋主來電</h2>
+<ul class="list">
+<li>對象：有外牆、防水需求的屋主（散客）。</li>
+<li>一頁式網站：施工前後對比照、服務項目、五年保固、服務區域、電話與 LINE。</li>
+<li>頁面的主要按鈕是撥打電話；LINE 並列。</li>
+<li>粉專公開資料未列官網與電話（待業主確認）。</li>
+</ul>
+<table>
+<thead><tr><th>廣告群組</th><th>關鍵字方向</th><th>廣告主打</th></tr></thead>
+<tbody>
+<tr><td data-label="廣告群組">外牆拉皮</td><td data-label="關鍵字方向">外牆拉皮、外牆翻新、老屋外牆整修、透天外牆</td><td data-label="廣告主打">舊磁磚不打除、施工前後對比</td></tr>
+<tr><td data-label="廣告群組">外牆防水</td><td data-label="關鍵字方向">外牆防水、防水工程、外牆漏水處理</td><td data-label="廣告主打">防水五年保固、責任施工</td></tr>
+<tr><td data-label="廣告群組">藝術塗裝</td><td data-label="關鍵字方向">仿石漆、仿清水模、外牆塗料</td><td data-label="廣告主打">仿石漆與仿清水模案例</td></tr>
+<tr><td data-label="廣告群組">品牌</td><td data-label="關鍵字方向">典義人、典義人塗裝</td><td data-label="廣告主打">粉專與聯絡方式</td></tr>
+</tbody>
+</table>
+<ul class="list">
+<li>投放地區：高雄、台南、嘉義、台中；各縣市分開看來電數，依數字調整預算。</li>
+<li>關鍵字的搜尋量與點擊單價：開戶後用 Google 關鍵字規劃工具查實際數字，寫進第一週報告。</li>
+<li>排除字：徵才、DIY、材料行這類搜尋，上線後每週依搜尋字詞報表更新。</li>
+</ul>
+</div></section>
+
+<section class="sec a" id="a-tracking"><div class="wrap">
+<span class="lab">06 追蹤與報表</span>
+<h2>兩條路線分開算，算到成交</h2>
+<ul class="list">
+<li>路線一：留言數與訊息數，由廣告後台與粉專收件匣統計。</li>
+<li>路線二：電話點擊與 LINE 點擊設為 Google Ads 轉換。</li>
+<li>每筆詢問寫進試算表，標記來源（社群、Google）與身分（合作對象、屋主），業主回填「已報價」「已成交」。</li>
+<li>追蹤碼用 Google Tag Manager 管理。</li>
+<li>報表：每週一份數字摘要，每月一份檢討。</li>
+</ul>
+</div></section>
+
+<section class="sec a" id="a-timeline"><div class="wrap">
+<span class="lab">07 時程</span>
+<h2>30 天：第一週社群上線，第二週搜尋上線，月底檢討</h2>
+<ol class="timeline">
+<li><b>第 1 週</b>廣告帳戶與權限開通、挑選案例貼文、社群貼文廣告上線</li>
+<li><b>第 2 週</b>一頁式網站完成、轉換追蹤安裝、Google 搜尋廣告上線</li>
+<li><b>第 3–4 週</b>依留言、訊息、來電數調整素材、關鍵字與預算</li>
+<li><b>第 30 天</b>成效報告與下一階段建議</li>
+</ol>
+</div></section>
+
+<section class="sec a" id="a-kpi"><div class="wrap">
+<span class="lab">08 成效指標</span>
+<h2>上線兩週取得基準，再訂目標數字</h2>
+<table>
+<thead><tr><th>路線</th><th>看的數字</th></tr></thead>
+<tbody>
+<tr><td data-label="路線">路線一　社群貼文廣告</td><td data-label="看的數字">留言數、訊息數、每則訊息成本、合作洽談數</td></tr>
+<tr><td data-label="路線">路線二　Google 搜尋廣告</td><td data-label="看的數字">來電數、每通來電成本、各縣市來電數</td></tr>
+<tr><td data-label="路線">兩條路線合計</td><td data-label="看的數字">成交回填數</td></tr>
+</tbody>
+</table>
+<p class="note">目標數字在上線兩週、取得實際成本後訂定。</p>
+</div></section>
+
+<section class="sec a" id="a-fee"><div class="wrap">
+<span class="lab">09 費用</span>
+<h2>費用</h2>
+<table>
+<thead><tr><th>項目</th><th>計費方式</th></tr></thead>
+<tbody>
+<tr><td data-label="項目">每月廣告預算：社群（付給平台）</td><td data-label="計費方式">沒有金額限制</td></tr>
+<tr><td data-label="項目">每月廣告預算：Google（付給平台）</td><td data-label="計費方式">沒有金額限制</td></tr>
+<tr><td data-label="項目">廣告代操服務費</td><td data-label="計費方式">廣告費的 20%</td></tr>
+<tr><td data-label="項目">一頁式網站建置</td><td data-label="計費方式"><span class="tbd">待填</span></td></tr>
+<tr><td data-label="項目">追蹤建置（網站埋代碼）</td><td data-label="計費方式">一次性，按工時計費</td></tr>
+</tbody>
+</table>
+<ul class="list">
+<li>直接使用業主自己的廣告帳戶投放，廣告費由該帳戶付給平台。</li>
+<li>廣告預算金額高時，協助財務報帳。</li>
+<li>Meta 廣告（路線一）：企業另外替 Meta 支付 3%，該期廣告費可以列入公司費用扣抵。</li>
+</ul>
+</div></section>
+
+<section class="sec a" id="a-prep"><div class="wrap">
+<span class="lab">10 開始前的準備</span>
+<h2>開始前，請業主準備的資料</h2>
+<ul class="list">
+<li>聯絡電話、LINE 官方帳號</li>
+<li>粉專與廣告帳戶權限（Meta 企業管理平台）</li>
+<li>施工前後照片的使用同意</li>
+<li>可接案的縣市與案件規模</li>
+<li>與設計公司、統包業者的配合方式與報價原則</li>
+<li>Google Ads 帳戶（沒有的話由我方協助開立）</li>
+</ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p>歡迎約 30 分鐘線上會議，逐項討論。</p>
+<p class="l2">Orderdan 簡單營銷｜orderdan-ai-marketing.com</p>
+</div></footer>
+
+<script>
+(function(){
+var tabs=[].slice.call(document.querySelectorAll('.tabs .tab'));
+var panes={dianyiren:document.getElementById('tab-dianyiren'),lightvision:document.getElementById('tab-lightvision')};
+function show(k){Object.keys(panes).forEach(function(p){panes[p].hidden=(p!==k);});tabs.forEach(function(b){var on=b.getAttribute('data-tab')===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false');});}
+function top(){window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0);});}
+function route(){var h=(location.hash||'').replace('#','');var k=(h==='dianyiren'||h.indexOf('a-')===0)?'dianyiren':'lightvision';show(k);var el=(h&&h!=='dianyiren'&&h!=='lightvision')?document.getElementById(h):null;if(el){el.scrollIntoView();}else{top();}}
+tabs.forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-tab');show(k);top();try{history.replaceState(null,'','#'+k);}catch(e){}});});
+window.addEventListener('hashchange',route);
+route();
+})();
+</script>
+</body>
+</html>
